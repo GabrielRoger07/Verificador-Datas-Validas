@@ -1,21 +1,6 @@
 import re
 from datetime import datetime
 
-'''def valida_data(data):
-    try:
-        date_obj = datetime.strptime(data, "%d/%m/%Y")
-        if date_obj.year < 1900 or date_obj.year > 2023:
-            return False
-        elif date_obj.day == 31 and date_obj.month == (2 or 4 or 6 or 9 or 11):
-            return False
-        elif date_obj.day > 28 and date_obj.month == 2 and date_obj.year % 4 != 0:
-            return False
-        elif date_obj.day == 29 and date_obj.month == 2 and date_obj.year == 1900:
-            return True
-        else:
-            return True
-    except ValueError:
-        return False'''
 def valida_data(data):
     try:
         date_obj = datetime.strptime(data, "%d/%m/%Y")
@@ -43,5 +28,4 @@ def conta_datas_validas(filename):
 
     return count
 
-# Exemplo de uso
 print(conta_datas_validas("datas.txt"))

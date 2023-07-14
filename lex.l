@@ -29,7 +29,7 @@ ANOBI   (19(0[48]|1[26]|2[048]|3[26]|4[048]|5[26]|6[048]|7[26]|8[048]|9[26])|20(
 
 %% /* Marca o início das regras do analisador léxico. */
 
-[0-9]{3,}
+[0-9|a-z|A-Z]{3,}
 {DIA28}"/"{FEB}"/"{ANO}     { ++contador; }
 {DIA29}"/"{FEB}"/"{ANOBI}   { ++contador; }
 {DIA30}"/"{MES30}"/"{ANO}   { ++contador; }

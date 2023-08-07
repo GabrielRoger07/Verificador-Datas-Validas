@@ -26,3 +26,8 @@ Um arquivo que contenha as seguintes informações:
 ```
 
 Deve retornar o valor 2, pois neste arquivo de exemplo contém apenas 2 datas válidas (14/06/2023 e 29/02/2000)
+
+## Observações
+* O arquivo geradorTeste.py gera um arquivo .txt com 100.000 datas para teste
+* O arquivo verificaValidade.py conta a quantidade de datas válidas presentes no arquivo em questão. Ele tem função de verificação do funcionamento do arquivo Flex
+* A pasta inputs contém diversos tipos de entrada diferentes com seus respectivos valores esperados
